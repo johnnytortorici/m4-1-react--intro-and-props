@@ -1,8 +1,10 @@
 .chat-message {
     display: flex;
     align-items: flex-end;
+    width: 350px;
     padding: 10px;
 }
+.right { justify-content: flex-end; }
 
 .chat-message p {
     margin: 0;
@@ -18,5 +20,9 @@
 .message-body {
     padding: 10px;
     border-radius: 10px;
-    background-color: #EFEFEF;
 }
+.sent {
+    background-color: #2190F8;
+    color: white;
+}
+.received { background-color: #E5E5EA; }
