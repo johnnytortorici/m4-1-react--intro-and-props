@@ -1,7 +1,7 @@
 .chat-message {
     display: flex;
     align-items: flex-end;
-    width: 350px;
+    width: 400px;
     padding: 10px;
 }
 .right { justify-content: flex-end; }
@@ -10,11 +10,14 @@
     margin: 0;
 }
 
-.chat-message img {
-    width: 50px;
-    height: 50px;
-    margin-right: 10px;
+.avatar {
     border-radius: 50%;
+}
+.small { width: 50px; height: 50px; }
+.medium { width: 60px; height: 60px; }
+
+.message-box {
+    padding-left: 10px;
 }
 
 .message-body {

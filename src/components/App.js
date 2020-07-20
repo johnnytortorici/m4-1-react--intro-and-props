@@ -6,11 +6,11 @@ import Footer from './Footer';
 
 import './App.css';
 
-const App = (props) => {
+const App = ({ currentUser, conversation }) => {
   return (
     <div className='wrapper'>
-      <Header />
-      <ChatStream currentUser={props.currentUser} messages={props.conversation.messages} />
+      <Header currentUser={currentUser} messages={conversation.messages} />
+      <ChatStream currentUser={currentUser} messages={conversation.messages} />
       <Footer />
     </div>
   );

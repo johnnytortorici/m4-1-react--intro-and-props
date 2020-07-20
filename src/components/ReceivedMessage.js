@@ -1,10 +1,12 @@
 import React from 'react';
 
+import Avatar from './Avatar';
+
 const ReceivedMessage = ({ message }) => {
     return (
         <div className='chat-message'>
-            <img src={message.user.avatar} alt={message.user.username} />
-            <div>
+            <Avatar size='small' user={message.user} />
+            <div class='message-box'>
                 <p>{message.user.username}</p>
                 <p className='message-body received'>{message.body}</p>
             </div>
