@@ -6,8 +6,25 @@
 }
 .right { justify-content: flex-end; }
 
+.bubble {
+    display: flex;
+    align-items: flex-end;
+}
+.tip-sent {
+    position: relative;
+    left: -7px;
+}
+.tip-received {
+    position: relative;
+    left: 5px;
+}
+
 .chat-message p {
     margin: 0;
+}
+
+.username {
+    padding: 0 0 3px 15px;
 }
 
 .avatar {
